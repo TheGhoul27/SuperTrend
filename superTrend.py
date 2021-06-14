@@ -109,4 +109,5 @@ if __name__ == "__main__":
         df[["Low", "High", 'Close', 'Open', 'Volume']] = df[[
             "Low", "High", 'Close', 'Open', 'Volume']].apply(pd.to_numeric)
         superTrendCalculator(df)
+        # All fields in dataframe of panda is stored in a CSV file.
         df.to_csv('Super_Trend.csv', header=True, index=False)
